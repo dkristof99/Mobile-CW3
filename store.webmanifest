@@ -1,0 +1,20 @@
+{
+    "name": "Store PWA",
+    "short_name": "Store",
+    "description": "online store PWA version",
+    "icons": [
+        {
+            "src": "store-icon_32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+        "src": "store-icon_512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+        }
+    ],
+    "start_url": "index.html",
+    "display": "fullscreen",
+    "background_color": "#008000"
+    }
