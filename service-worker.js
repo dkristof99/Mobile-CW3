@@ -5,10 +5,6 @@ var cacheFiles = [
     "script.js",
     "store.webmanifest",
     "style.css",
-    "package-lock.json",
-    "package.json",
-    "server.js",
-    ".gitignore",
 
     "images/english.png",
     "images/french.png",
