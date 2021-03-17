@@ -5,6 +5,8 @@ var cacheFiles = [
     "script.js",
     "store.webmanifest",
     "style.css",
+    "package-lock.json",
+    "package.json",
 
     "images/english.png",
     "images/french.png",
