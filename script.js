@@ -1,3 +1,5 @@
+const { response } = require("express");
+
 const Component = {
     template: '<div>Hello From Global Component</div>'
 }
@@ -127,7 +129,7 @@ let instance = new Vue({
                 this.errors.push("Name required.");
             } else if (!this.validName(this.name)) {
                 this.errors.push('Valid name required.');
-            }
+            };
             if (!phone) {
                 this.errors.push("Phone required.");
             } else if (!this.validPhone(this.phone)) {
@@ -135,6 +137,17 @@ let instance = new Vue({
             }
             if (!this.errors.length) {
                 return true;
+            } else {
+                //save order to MongoDB
+                fetch('https://mobile-cw2.herokuapp.com/collection/orders', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(form)
+                })
+                .then(response => response.json())
+                alert("Order saved");
             }
             e.preventDefault();
             console.log(e);
