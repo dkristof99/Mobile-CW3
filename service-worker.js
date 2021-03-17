@@ -7,6 +7,7 @@ var cacheFiles = [
     "style.css",
     "package-lock.json",
     "package.json",
+    "server.js",
 
     "images/english.png",
     "images/french.png",
