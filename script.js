@@ -1,3 +1,7 @@
+Vue.component('my-component', {
+    template: '<div>Hello From Global Component</div>'
+});
+
 // Vue Object holding all the information that is displayed in the html {{}} tags
 new Vue({
     el: "#app",
