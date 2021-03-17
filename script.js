@@ -1,4 +1,3 @@
-const { response } = require("express");
 
 const Component = {
     template: '<div>Hello From Global Component</div>'
