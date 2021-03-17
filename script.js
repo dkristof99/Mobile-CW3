@@ -5,6 +5,7 @@ Vue.component('my-component', {
 // Vue Object holding all the information that is displayed in the html {{}} tags
 new Vue({
     el: "#app",
+    components: {'myComponent': Component},
     data: {
         showProduct: true,
         products: products,
