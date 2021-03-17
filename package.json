@@ -5,18 +5,10 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dkristof99/Mobile-CW3.git"
+    "test": "echo \"Error: no test specified\""
   },
   "author": "Kristof",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dkristof99/Mobile-CW3/issues"
-  },
-  "homepage": "https://github.com/dkristof99/Mobile-CW3#readme",
   "dependencies": {
     "express": "^4.17.1",
     "mongodb": "^3.6.3"
