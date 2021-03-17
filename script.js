@@ -120,7 +120,7 @@ let instance = new Vue({
         //                      FORM VALIDATION
         //*********************************************************** */
 
-/*         checkForm: function (e) {
+        checkForm: function (e) {
             this.errors = [];
 
             if (!name) {
@@ -140,12 +140,12 @@ let instance = new Vue({
             console.log(e);
         },
         validName: function (name) {
-            var re = /^[A-Za-z]+$/g;
+            var re = /(^[A-Za-z]{3,16})([ ]{0,1})([A-Za-z]{3,16})?([ ]{0,1})?([A-Za-z]{3,16})?([ ]{0,1})?([A-Za-z]{3,16})/g;
             return re.test(name);
         },
         validPhone: function (phone) {
-            var re = /((\+44(\s\(0\)\s|\s0\s|\s)?)|0)7\d{3}(\s)?\d{6}/g;
+            var re = /^(\+44\s?7\d{3}|\(?07\d{3}\)?)\s?\d{3}\s?\d{3}$/g;
             return re.test(phone);
-        }, */
+        },
     }
 });
