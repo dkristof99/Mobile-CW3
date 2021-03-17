@@ -8,6 +8,7 @@ var cacheFiles = [
     "package-lock.json",
     "package.json",
     "server.js",
+    ".gitignore",
 
     "images/english.png",
     "images/french.png",
