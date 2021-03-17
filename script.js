@@ -1,6 +1,6 @@
-Vue.component('my-component', {
+const Component = {
     template: '<div>Hello From Global Component</div>'
-});
+}
 
 // Vue Object holding all the information that is displayed in the html {{}} tags
 new Vue({
