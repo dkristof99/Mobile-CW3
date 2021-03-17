@@ -3,7 +3,7 @@ const app = express()
 
 const MongoClient = require("mongodb").MongoClient;
 let db;
-MongoClient.connect("mongodb+srv://dkristof:1234@cluster0.wkaio.mongodb.net/webstore?retryWrites=true&w=majority", (err, client) => {
+MongoClient.connect("mongodb+srv://dkristof:1234@cluster0.wkaio.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", (err, client) => {
     db = client.db("CW3")
 })
 
