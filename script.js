@@ -1,4 +1,3 @@
-
 const Component = {
     template: '<div>Hello From Global Component</div>'
 }
@@ -146,7 +145,9 @@ let instance = new Vue({
                     body: JSON.stringify(form)
                 })
                 .then(response => response.json())
-                alert("Order saved");
+                .then(responseJSON => {
+                    console.log('success:', responseJSON);
+                });
             }
             e.preventDefault();
             console.log(e);
