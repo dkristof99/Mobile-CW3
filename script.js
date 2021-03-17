@@ -120,7 +120,7 @@ let instance = new Vue({
         //                      FORM VALIDATION
         //*********************************************************** */
 
-        checkForm: function (e) {
+/*         checkForm: function (e) {
             this.errors = [];
 
             if (!name) {
@@ -146,6 +146,6 @@ let instance = new Vue({
         validPhone: function (phone) {
             var re = /((\+44(\s\(0\)\s|\s0\s|\s)?)|0)7\d{3}(\s)?\d{6}/g;
             return re.test(phone);
-        },
+        }, */
     }
 });
