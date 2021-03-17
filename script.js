@@ -3,12 +3,12 @@ const Component = {
 }
 
 // Vue Object holding all the information that is displayed in the html {{}} tags
-new Vue({
+let instance = new Vue({
     el: "#app",
-    components: {'myComponent': Component},
+    components: { 'myComponent': Component },
     data: {
         showProduct: true,
-        products: products,
+        products: {},
 
         // FORM
         form: {
@@ -19,6 +19,16 @@ new Vue({
         //Checkout
         cart: [],
         errors: [],
+    },
+    created: function () {
+        //replace the URL to the Heroku app and route
+        fetch("https://mobile-cw2.herokuapp.com/collection/lessons").then(
+            function (response) {
+                response.json().then(
+                    function (json) {
+                        instance.products = json;
+                    });
+            })
     },
 
     computed: {
